@@ -1,4 +1,6 @@
-# Welcome to Remix!
+# Welcome to Remix Classical Stack!
+
+Exactly like the default Remix starter, but with CSS instead of Tailwind.
 
 - 📖 [Remix docs](https://remix.run/docs)
 
