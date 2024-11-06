@@ -1,3 +1,5 @@
+![Remix Classical Stack](https://res.cloudinary.com/diyro4kpu/image/upload/v1730895980/remix-classical-stack-cover_elryah.jpg)
+
 # Welcome to Remix Classical Stack
 
 Exactly like the default Remix starter, but with CSS instead of Tailwind.
