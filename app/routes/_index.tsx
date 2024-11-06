@@ -13,7 +13,7 @@ export default function Index() {
     <div className="page-container">
       <header className="page-header">
         <h1 className="page-title">
-          Welcome to <span className="sr-only">Remix</span>
+          Welcome to <span className="sr-only">Remix Classical Stack</span>
         </h1>
         <div className="logo-container">
           <img
