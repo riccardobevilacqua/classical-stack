@@ -1,4 +1,4 @@
-# Welcome to Remix Classical Stack!
+# Welcome to Remix Classical Stack
 
 Exactly like the default Remix starter, but with CSS instead of Tailwind.
 
@@ -39,4 +39,4 @@ Make sure to deploy the output of `npm run build`
 
 ## Styling
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+This template comes with CSS instead of Tailwind for a clean starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
