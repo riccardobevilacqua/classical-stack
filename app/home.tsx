@@ -1,14 +1,6 @@
-import type { MetaFunction } from "@remix-run/node";
 import { cloneElement } from 'react';
 
-export const meta: MetaFunction = () => {
-  return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
-  ];
-};
-
-export default function Index() {
+export default function Home() {
   return (
     <div className="page-container">
       <header className="page-header">
@@ -16,16 +8,14 @@ export default function Index() {
           Welcome to <span className="sr-only">Remix Classical Stack</span>
         </h1>
         <div className="logo-container">
-          <img
-            src="/logo-light.png"
-            alt="Remix"
-            className="logo-light"
-          />
-          <img
-            src="/logo-dark.png"
-            alt="Remix"
-            className="logo-dark"
-          />
+          {['light', 'dark'].map(theme => (
+            <img
+              key={theme}
+              src={`/assets/images/logo/rr_lockup_${theme}.avif`}
+              alt="React Router logo"
+              className={`logo-${theme}`}
+            />
+          ))}
         </div>
       </header>
       <nav className="nav-container">
