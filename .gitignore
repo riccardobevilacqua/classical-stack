@@ -1,6 +1,9 @@
-node_modules
-
-/.cache
-/build
 .env
+!.env.example
+.DS_Store
 .react-router
+build
+node_modules
+*.tsbuildinfo
+.env
+*.log

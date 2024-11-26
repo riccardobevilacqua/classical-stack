@@ -1,44 +1,102 @@
-# Welcome to Remix Classical Stack
+# Welcome to the Classical Stack for React Router 7+
 
-![Remix Classical Stack](https://res.cloudinary.com/diyro4kpu/image/upload/v1730895980/remix-classical-stack-cover_elryah.jpg)
+A pristine React Router 7+ boilerplate with CSS instead of Tailwind.
 
-Exactly like the default Remix starter, but with CSS instead of Tailwind.
+## Features
 
-- 📖 [Remix docs](https://remix.run/docs)
+- 🚀 Server-side rendering
+- ⚡️ Hot Module Replacement (HMR)
+- 📦 Asset bundling and optimization
+- 🔄 Data loading and mutations
+- 🔒 TypeScript by default
+- 🎉 CSS for styling
+- 📖 [React Router docs](https://reactrouter.com/)
 
-## Development
+## Getting Started
 
-Run the dev server:
+### Installation
 
-```shellscript
+Install the dependencies:
+
+```bash
+npm install
+```
+
+### Development
+
+Start the development server with HMR:
+
+```bash
 npm run dev
+```
+
+Your application will be available at `http://localhost:5173`.
+
+## Building for Production
+
+Create a production build:
+
+```bash
+npm run build
 ```
 
 ## Deployment
 
-First, build your app for production:
+### Docker Deployment
 
-```sh
-npm run build
+This template includes three Dockerfiles optimized for different package managers:
+
+- `Dockerfile` - for npm
+- `Dockerfile.pnpm` - for pnpm
+- `Dockerfile.bun` - for bun
+
+To build and run using Docker:
+
+```bash
+# For npm
+docker build -t my-app .
+
+# For pnpm
+docker build -f Dockerfile.pnpm -t my-app .
+
+# For bun
+docker build -f Dockerfile.bun -t my-app .
+
+# Run the container
+docker run -p 3000:3000 my-app
 ```
 
-Then run the app in production mode:
+The containerized application can be deployed to any platform that supports Docker, including:
 
-```sh
-npm start
-```
+- AWS ECS
+- Google Cloud Run
+- Azure Container Apps
+- Digital Ocean App Platform
+- Fly.io
+- Railway
 
-Now you'll need to pick a host to deploy it to.
+### DIY Deployment
 
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+If you're familiar with deploying Node applications, the built-in app server is production-ready.
 
 Make sure to deploy the output of `npm run build`
 
-- `build/server`
-- `build/client`
+```
+├── package.json
+├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
+├── build/
+│   ├── client/    # Static assets
+│   └── server/    # Server-side code
+```
 
 ## Styling
 
-This template comes with CSS instead of Tailwind for a clean starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+This template comes with CSS instead of Tailwind for a clean starting experience.
+
+You can use the CSS framework you prefer.
+
+See the [Vite docs on css](https://vitejs.dev/config/#css-preprocessoroptions) for more information.
+
+---
+
+Built with ❤️ by Riccardo Bevilacqua using React Router.
