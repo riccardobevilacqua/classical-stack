@@ -91,7 +91,7 @@ Make sure to deploy the output of `npm run build`
 
 ## Styling
 
-This template comes with CSS instead of Tailwind for a clean starting experience.
+This template comes with **CSS instead of Tailwind** for a clean starting experience.
 
 You can use the CSS framework you prefer.
 
